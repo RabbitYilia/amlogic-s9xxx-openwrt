@@ -9,6 +9,9 @@
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
+echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
+echo 'src-git modem https://github.com/FUjr/modem_feeds.git;main' >> feeds.conf.default
+git clone https://github.com/gSpotx2f/luci-app-cpu-perf package/luci-app-cpu-perf
 # other
 # rm -rf package/lean/{samba4,luci-app-samba4,luci-app-ttyd}
 
